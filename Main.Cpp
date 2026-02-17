@@ -52,3 +52,17 @@ int main() {
     } while (choice != 3);
     return 0;
 }
+int main() {
+    int choice;
+    do {
+        std::cout << "1. Add Student\n2. View Students\n3. Exit\n";
+        std::cin >> choice;
+        switch (choice) {
+            case 1: addStudent(); break;
+            case 2: viewStudents(); break;
+            case 3: std::cout << "Exiting...\n"; break;
+            default: std::cout << "Invalid choice. Please try again.\n";
+        }
+    } while (choice != 3);
+    return 0;
+}
